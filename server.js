@@ -1,8 +1,8 @@
 var http = require('http');
 var app = require('./config/express')();
-require('./config/database.js')('mongodb://localhost/contatooh');
+require('./config/database.js')('mongodb://admin:z8gr922g@ds115436.mlab.com:15436/sportsme');
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express Server escutando na porta ' + 
-              app.get('port'));
+http.createServer(app).listen(app.get('port'), function() {
+    console.log('Express Server escutando na porta ' +
+        app.get('port'));
 });
